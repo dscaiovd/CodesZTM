@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import font
 
 def check_palindrome():
-    word = entry.get()  # Get the word entered in the entry field
+    word = entry.get()  # Get the word in the entry field
     reversed_word = word[::-1]
     if word.lower() == reversed_word.lower():
         result.config(text="It is a palindrome.")
@@ -11,7 +11,7 @@ def check_palindrome():
 
 # Function to handle button event
 def get_input():
-    text = entry.get()  # Get the value entered in the entry field
+    text = entry.get()  # Get the value in the entry field
     print("Entered text:", text)
 
 # Creating window
@@ -20,7 +20,7 @@ window = tk.Tk()
 # Create the entry field
 entry = tk.Entry(window)
 
-# Position the entry field in the window
+# Position the entry button
 entry.pack()
 
 # Create the button
@@ -30,12 +30,12 @@ button = tk.Button(window, text="Check", command=check_palindrome)
 result = tk.Label(window)
 result.pack()
 
-# Position the button in the window
+# Position of the button
 button.pack()
 button.place(x=220, y=180)
 entry.place(x=180, y=150)
 
-# Creating font instances in the window
+# Creating font instances 
 large_font = font.Font(size=15)
 medium_font = font.Font(size=13)
 small_font = font.Font(size=12)
@@ -45,7 +45,7 @@ large_label = tk.Label(window, text="Hello! Welcome!", font=large_font)
 medium_label = tk.Label(window, text="Now let's check if the word is a palindrome.", font=medium_font)
 small_label = tk.Label(window, text="Enter a word or text:")
 
-# Displaying the labels in the window
+# Displaying the labels
 large_label.pack()
 medium_label.pack()
 small_label.pack()
