@@ -42,7 +42,7 @@ small_font = font.Font(size=12)
 
 # Creating labels for fonts
 large_label = tk.Label(window, text="Hello! Welcome!", font=large_font)
-medium_label = tk.Label(window, text="Now let's check if a word is a palindrome.", font=medium_font)
+medium_label = tk.Label(window, text="Now let's check if the word is a palindrome.", font=medium_font)
 small_label = tk.Label(window, text="Enter a word or text:")
 
 # Displaying the labels in the window
