@@ -4,3 +4,5 @@ counter = 0
 for number in my_list:
     counter = counter + number
 print(counter)
+
+print(list(range(1, 11)))
